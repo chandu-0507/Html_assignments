@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Menu Card</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff3e0;
+      padding: 20px;
+    }
+    .menu-card {
+      width: 80%;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    h1 {
+      text-align: center;
+      color: #e65100;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ffcc80;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #ffb74d;
+      color: #fff;
+    }
+    td {
+      background-color: #fff8e1;
+    }
+    .category {
+      background-color: #ffe0b2;
+      font-weight: bold;
+      text-align: center;
+      color: #bf360c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-card">
+    <h1>🍴 Taste Haven Restaurant</h1>
+
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Price (₹)</th>
+      </tr>
+
+      <!-- Starters -->
+      <tr><td class="category" colspan="2">🥗 Starters</td></tr>
+      <tr><td>Veg Spring Rolls</td><td>120</td></tr>
+      <tr><td>Chicken Manchurian</td><td>150</td></tr>
+      <tr><td>Paneer Tikka</td><td>140</td></tr>
+
+      <!-- Main Course -->
+      <tr><td class="category" colspan="2">🍛 Main Course</td></tr>
+      <tr><td>Butter Chicken</td><td>250</td></tr>
+      <tr><td>Veg Biryani</td><td>180</td></tr>
+      <tr><td>Paneer Butter Masala</td><td>210</td></tr>
+
+      <!-- Desserts -->
+      <tr><td class="category" colspan="2">🍨 Desserts</td></tr>
+      <tr><td>Gulab Jamun</td><td>60</td></tr>
+      <tr><td>Brownie with Ice Cream</td><td>100</td></tr>
+
+      <!-- Beverages -->
+      <tr><td class="category" colspan="2">🥤 Beverages</td></tr>
+      <tr><td>Cold Coffee</td><td>80</td></tr>
+      <tr><td>Mango Lassi</td><td>70</td></tr>
+      <tr><td>Lemon Soda</td><td>50</td></tr>
+    </table>
+  </div>
+
+</body>
+</html>
