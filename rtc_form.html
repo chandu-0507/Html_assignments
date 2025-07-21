@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TSRTC General Fresh Bus Pass Application</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f6f6f6;
+      margin: 20px;
+    }
+    .container {
+      background: #fff;
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #00539C;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      padding: 10px;
+      background: #00539C;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #004080;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>TSRTC General Fresh Bus Pass</h1>
+
+    <form action="https://tgsrtcpass.com/generalbuspass" method="post">
+      <label for="name">Applicant Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="address">Residential Address</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="routeFrom">Route From</label>
+      <input type="text" id="routeFrom" name="route_from" required>
+
+      <label for="routeTo">Route To</label>
+      <input type="text" id="routeTo" name="route_to" required>
+
+      <label for="validity">Pass Validity</label>
+      <select id="validity" name="validity" required>
+        <option value="">Select validity</option>
+        <option value="monthly">Monthly</option>
+        <option value="quarterly">Quarterly</option>
+        <option value="yearly">Yearly</option>
+      </select>
+
+      <label for="proof">Upload ID/Address Proof</label>
+      <input type="file" id="proof" name="proof" accept=".jpg,.jpeg,.png,.pdf" required>
+
+      <button type="submit">Apply Now</button>
+    </form>
+  </div>
+
+</body>
+</html>
